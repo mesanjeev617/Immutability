@@ -7,6 +7,7 @@ import useUpdateLogger from './useUpdateLogger';
 function App() {
 
   const [name, setName] = useLocalStorage('name', '');
+  console.log('hhhhhh');
   useUpdateLogger(name);
   return (
     <input 
@@ -15,6 +16,7 @@ function App() {
       onChange={e=> setName(e.target.value)}
     />
   );
+  
 }
 
 export default App;
